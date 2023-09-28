@@ -1,0 +1,33 @@
+<mvc:View controllerName="brasileirao.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <ObjectHeader 
+            title="Campeonato Brasileiro FioriNET"
+            number="22ª"
+            numberUnit="rodada"
+            > 
+
+            </ObjectHeader>
+
+                 <IconTabBar>
+                    <items>
+                        <IconTabFilter text="Classificação" icon="sap-icon://competitor">
+                        
+                        </IconTabFilter>
+                    </items>
+                </IconTabBar>
+
+                
+                 <IconTabBar>
+                    <items>
+                        <IconTabFilter text="Partidas" icon="sap-icon://soccer">
+                        
+                        </IconTabFilter>
+                    </items>
+                </IconTabBar>
+
+         </content>
+    </Page>
+</mvc:View>
