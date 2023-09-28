@@ -4,6 +4,7 @@
     <Page id="page" title="{i18n>title}">
         <content>
             <ObjectHeader 
+            id="objectheader"
             title="Campeonato Brasileiro FioriNET"
             number="22ª"
             numberUnit="rodada"
@@ -11,22 +12,83 @@
 
             </ObjectHeader>
 
-                 <IconTabBar>
+                 <IconTabBar id="icontabbar">
                     <items>
-                        <IconTabFilter text="Classificação" icon="sap-icon://competitor">
-                        
+                        <IconTabFilter id="objectfilter" text="Classificação" icon="sap-icon://competitor">
+                            <Table id="tableclassificacao">
+                                <columns>
+                                    <Column> 
+                                        <Text text="Posição"></Text>
+                                    
+                                    </Column>
+
+                                      <Column> 
+                                        <Text text="Escudo"></Text>
+                                    
+                                    </Column>
+
+                                      <Column> 
+                                        <Text  text="Time"></Text>
+                                    
+                                    </Column>
+
+                                      <Column> 
+                                        <Text  text="Pontos"></Text>
+                                    
+                                    </Column>
+
+                                      <Column> 
+                                        <Text text="Jogos"></Text>
+                                    
+                                    </Column>
+
+                                      <Column> 
+                                        <Text  text="Vitórias"></Text>
+                                    
+                                    </Column>
+
+                                      <Column> 
+                                        <Text text="Empates"></Text>
+                                    
+                                    </Column>
+
+                                      <Column> 
+                                        <Text text="Derrotas"></Text>
+                                    
+                                    </Column>
+
+                                      <Column> 
+                                        <Text text="GM"></Text>
+                                    
+                                    </Column>
+
+                                      <Column> 
+                                        <Text text="GC"></Text>
+                                    
+                                    </Column>
+
+                                      <Column> 
+                                        <Text text="SG"></Text>
+                                    
+                                    </Column>
+
+                                </columns>
+                            
+                            </Table>
+                        </IconTabFilter>
+                    </items>
+
+                      <items>
+                        <IconTabFilter id="objectfilter2" text="Partidas" icon="sap-icon://soccer">
+                         <Table id="tablepartidas">
+                            
+                            
+                            </Table>
                         </IconTabFilter>
                     </items>
                 </IconTabBar>
 
-                
-                 <IconTabBar>
-                    <items>
-                        <IconTabFilter text="Partidas" icon="sap-icon://soccer">
-                        
-                        </IconTabFilter>
-                    </items>
-                </IconTabBar>
+    
 
          </content>
     </Page>
