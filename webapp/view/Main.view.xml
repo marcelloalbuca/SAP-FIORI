@@ -1,12 +1,13 @@
 <mvc:View controllerName="brasileirao.controller.Main"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:core="sap.ui.core"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <content>
             <ObjectHeader 
             id="objectheader"
-            title="Campeonato Brasileiro FioriNET"
-            number="22ª"
+            title="{ModeloDadosGerais>/nomeCampeonato}"
+            number="{ModeloDadosGerais>/rodada}"
             numberUnit="rodada"
             > 
 
@@ -15,7 +16,10 @@
                  <IconTabBar id="icontabbar">
                     <items>
                         <IconTabFilter id="objectfilter" text="Classificação" icon="sap-icon://competitor">
-                            <Table id="tableclassificacao">
+                            <Table id="tableclassificacao"
+                            items="{ModeloTabela>/Classificacao}"
+                            >
+
                                 <columns>
                                     <Column> 
                                         <Text text="Posição"></Text>
@@ -74,21 +78,34 @@
 
                                 </columns>
                             
+                                    <items>
+                                        <ColumnListItem>
+                                            <cells>
+                                                <Text text="{ModeloTabela>posicao}"></Text>
+                                                <Image width="80%" 
+                                                src="{ModeloTabela>time/escudo}">
+                                                </Image>
+                                                <Text text="{ModeloTabela>posicao>time/nome_popular}"></Text>
+                                                <Text text="{ModeloTabela>pontos}"></Text>
+                                                <Text text="{ModeloTabela>jogos}"></Text>
+                                                <Text text="{ModeloTabela>vitorias}"></Text>
+                                                <Text text="{ModeloTabela>vitorias}"></Text>
+                                                <Text text="5"></Text>
+                                                <Text text="39"></Text>
+                                                <Text text="15"></Text>
+                                                <Text text="24"></Text>
+                                            </cells>
+                                        </ColumnListItem>
+                                    </items>
                             </Table>
                         </IconTabFilter>
-                    </items>
+            
+                        <IconTabFilter id="idPartidas" text="Partidas" icon="sap-icon://soccer">
+                         <core:Fragment fragmentName="brasileirao.view.partidas" type="XML" />
 
-                      <items>
-                        <IconTabFilter id="objectfilter2" text="Partidas" icon="sap-icon://soccer">
-                         <Table id="tablepartidas">
-                            
-                            
-                            </Table>
                         </IconTabFilter>
                     </items>
                 </IconTabBar>
-
-    
 
          </content>
     </Page>

@@ -57,6 +57,10 @@
         "settings": {
           "bundleName": "brasileirao.i18n.i18n"
         }
+      },
+      "ModeloTabela" :{
+        "type" : "sap.ui.model.json.JSONModel",
+        "uri"  : "model/tabela.json"
       }
     },
     "resources": {
