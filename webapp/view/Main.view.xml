@@ -89,11 +89,11 @@
                                                 <Text text="{ModeloTabela>pontos}"></Text>
                                                 <Text text="{ModeloTabela>jogos}"></Text>
                                                 <Text text="{ModeloTabela>vitorias}"></Text>
-                                                <Text text="{ModeloTabela>vitorias}"></Text>
-                                                <Text text="5"></Text>
-                                                <Text text="39"></Text>
-                                                <Text text="15"></Text>
-                                                <Text text="24"></Text>
+                                                <Text text="{ModeloTabela>empates}"></Text>
+                                                <Text text="{ModeloTabela>derrotas}"></Text>
+                                                <Text text="{ModeloTabela>gols_pro}"></Text>
+                                                <Text text="{ModeloTabela>gols_contra}"></Text>
+                                                <Text text="{ModeloTabela>saldo_gols}"></Text>
                                             </cells>
                                         </ColumnListItem>
                                     </items>

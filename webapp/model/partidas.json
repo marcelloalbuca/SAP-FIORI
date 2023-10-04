@@ -1,0 +1,50 @@
+{
+    "nome": "1ª Rodada",
+    "slug": "1a-rodada",
+    "rodada": 1,
+    "status": "encerrada",
+    "proxima_rodada": {
+        "nome": "2ª Rodada",
+        "slug": "2a-rodada",
+        "rodada": 2,
+        "status": "encerrada"
+    },
+    "rodada_anterior": null,
+    "_link": "/v1/campeonatos/10/rodadas/1",
+    "partidas": [
+        {
+            "partida_id": 9000,
+            "campeonato": {
+                "campeonato_id": 10,
+                "nome": "Campeonato Brasileiro",
+                "slug": "campeonato-brasileiro"
+            },
+            "placar": "Palmeiras 2x1 Cuiabá",
+            "time_mandante": {
+                "time_id": 56,
+                "nome_popular": "Palmeiras",
+                "sigla": "PAL",
+                "escudo": "https://cdn.api-futebol.com.br/escudos/638d34a1cf247.svg"
+            },
+            "time_visitante": {
+                "time_id": 204,
+                "nome_popular": "Cuiabá",
+                "sigla": "CUI",
+                "escudo": "https://cdn.api-futebol.com.br/escudos/638d34ebcdafa.svg"
+            },
+            "placar_mandante": 2,
+            "placar_visitante": 1,
+            "disputa_penalti": false,
+            "status": "finalizado",
+            "slug": "palmeiras-cuiaba-9000",
+            "data_realizacao": "15/04/2023",
+            "hora_realizacao": "16:00",
+            "data_realizacao_iso": "2023-04-15T16:00:00-0300",
+            "estadio": {
+                "estadio_id": 76,
+                "nome_popular": "Arena Palmeiras"
+            },
+            "_link": "/v1/partidas/9000"
+        }
+    ]
+}

@@ -61,6 +61,10 @@
       "ModeloTabela" :{
         "type" : "sap.ui.model.json.JSONModel",
         "uri"  : "model/tabela.json"
+      },
+      "ModeloPartidas" :{
+        "type" : "sap.ui.model.json.JSONModel",
+        "uri"  : "model/partidas.json"
       }
     },
     "resources": {
