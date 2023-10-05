@@ -32,12 +32,11 @@
                         <VBox>
 
                             <Text text="{ModeloPartidas>placar}" />
-                            <Text text="02/10 - 19h" />
-                            <Text text="Encerrada" />
+                            <Text text="{ModeloPartidas>data_realizacao}" />
+                            <Text text="{ModeloPartidas>status}" />
 
                         </VBox>
-                    <Image src="https://1.bp.blogspot.com/-NzAUmbZFcgo/XgXrFsyj-QI/AAAAAAAAH1E/qiHs2Zh_Y_sbnwZUFmDMvk1JtV1_sAvAACLcBGAsYHQ/s1600/ESPORTE%2BCLUBE%2BBAHIA%2B%25282%2529.png" width="15%" />
-                
+                    <Image src="{ModeloPartidas>time_visitante/escudo}" width="15%" />
                  </cells>
             </ColumnListItem>
 

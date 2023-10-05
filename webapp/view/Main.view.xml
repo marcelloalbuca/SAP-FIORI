@@ -6,10 +6,10 @@
         <content>
             <ObjectHeader 
             id="objectheader"
-            title="{ModeloDadosGerais>/nomeCampeonato}"
-            number="{ModeloDadosGerais>/rodada}"
+            title="{ModeloDadosGerais>/nome_popular}"
+            number="{ModeloDadosGerais>/rodada_atual/rodada}a"
             numberUnit="rodada"
-            > 
+            >
 
             </ObjectHeader>
 
