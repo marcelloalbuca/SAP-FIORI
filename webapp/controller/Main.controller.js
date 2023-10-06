@@ -171,7 +171,8 @@ sap.ui.define([
                      //mudar os dados do model
                      oModeloPartidas.setData(response);
 
-                    var rodadaAtual = response.rodada_atual.rodada;
+                  //  var rodadaAtual = response.rodada_atual.rodada;
+                  //  this.onBuscarPartidas(rodadaAtual);
  
                  }.bind(this)
                 )
